@@ -1,0 +1,366 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --special--color: rgb(11, 167, 128);
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "poppins", serif;
+}
+header {
+  width: 100%;
+  display: flex;
+  height: 70px;
+  padding: 0 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  color: var(--special--color);
+  font-size: 23px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 100px;
+}
+
+header nav ul li a {
+  font-size: 17px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+header .search-box {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+header .search-box input {
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 10px;
+  background-color: rgb(57, 56, 56);
+  color: white;
+  border: none;
+}
+header .search-box input::placeholder {
+  font-size: 17px;
+}
+header .search-box .search-icon {
+  background-color: rgb(11, 172, 118);
+  position: absolute;
+  left: 81%;
+  border-radius: 50px;
+  width: 30px;
+  height: 29px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* main */
+.main {
+  width: 100%;
+  margin-top: 30px;
+}
+.main .intro {
+  font-size: 60px;
+  padding: 70px 105px;
+  width: 53%;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.main .intro span {
+  color: var(--special--color);
+}
+.main .get-started {
+  width: 85%;
+  height: 350px;
+  margin-top: 75px;
+  padding: 30px 105px;
+  background-color: var(--special--color);
+}
+.main .get-started p {
+  color: black;
+  font-weight: 500;
+  text-transform: none;
+  font-size: 13px;
+  letter-spacing: 0.1rem;
+
+  width: 22%;
+}
+.main .get-started .gt-btn {
+  color: white;
+  background-color: black;
+  width: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 11px;
+  margin: 30px 40px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  letter-spacing: normal;
+}
+.main .image {
+  height: 380px;
+  position: absolute;
+  background-color: rgb(34, 33, 33);
+  width: 75%;
+  padding: 35px;
+  top: 55%;
+  justify-content: space-between;
+  display: flex;
+  left: 25%;
+  padding-left: 40px;
+}
+.main .image .text {
+  color: white;
+  width: 30%;
+  height: 190px;
+  padding: 25px 30px;
+  background-color: rgb(82, 79, 79);
+}
+.main .image .text h3 {
+  margin-bottom: 10px;
+}
+.main .image .text p {
+  color: rgb(210, 207, 207);
+  width: 100%;
+}
+.main .image img {
+  width: 800px;
+  left: 25%;
+  top: -80%;
+  z-index: 222;
+  height: 800px;
+  background-color: transparent;
+  position: absolute;
+}
+.main .about-us {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 0;
+  background-color: black;
+}
+.main .about-us img {
+  background-color: black;
+  width: 700px;
+  height: 540px;
+}
+.main .about-us .text {
+  margin-left: 30px;
+  padding: 20px;
+  margin-top: 50px;
+}
+.main .about-us .text h2 {
+  font-size: 15px;
+
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color: var(--special--color);
+}
+.main .about-us .text .big-text {
+  font-size: 45px;
+  font-weight: 600;
+  width: 45%;
+  margin-bottom: 25px;
+  color: white;
+}
+.main .about-us .text .big-text span {
+  color: var(--special--color);
+}
+.main .about-us .text p {
+  width: 70%;
+  font-size: 14px;
+  color: rgb(168, 167, 167);
+}
+.main .about-us .text .learn-more {
+  margin-top: 40px;
+  width: 150px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  background-color: rgb(96, 219, 178);
+  border-radius: 20px;
+  color: black;
+  padding: 10px 20px;
+}
+
+/* main ends here */
+
+/* birdpedia section */
+.birdpedia {
+  margin: auto;
+  width: 80%;
+}
+.birdpedia .intro {
+  width: 100%;
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+.birdpedia .intro h1 {
+  text-transform: capitalize;
+  margin: 20px 0;
+  font-size: 28px;
+}
+.birdpedia .intro p {
+  font-size: 14px;
+  color: rgb(168, 167, 167);
+}
+.birdpedia .intro h1 span {
+  color: var(--special--color);
+}
+.birdpedia .cards {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 30px;
+}
+.birdpedia .cards a {
+  text-decoration: none;
+  color: white;
+}
+.birdpedia .cards a .card {
+  width: 350px;
+  background-color: black;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.birdpedia .cards a .card h3 {
+  font-size: 23px;
+  margin-top: 10px;
+}
+.birdpedia .cards a .card .birdfam {
+  margin-bottom: 25px;
+  font-size: 15px;
+  color: rgb(198, 196, 196);
+}
+.birdpedia .cards a .card .learn-more {
+  background-color: rgb(20, 246, 171);
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-weight: 600;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  margin: auto;
+}
+.birdpedia .cards a .card img {
+  width: 100%;
+  height: 370px;
+  border-radius: 2px;
+}
+.birdpedia .arrow-btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  gap: 20px;
+}
+.birdpedia .arrow-btn p {
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgb(13, 185, 127);
+}
+.birdpedia .arrow-btn .prev {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+/* birdpedia section ends here */
+
+/* top section begins here */
+.top {
+  margin: 100px auto;
+  width: 75%;
+}
+.top .intro {
+  text-align: center;
+}
+.top .intro h2 {
+  margin: 20px 0;
+  font-size: 28px;
+  text-transform: capitalize;
+}
+.top .intro h2 span {
+  color: var(--special--color);
+}
+.top .cards {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.top .cards .card {
+  width: 500px;
+}
+.top .cards .card img {
+  width: 100%;
+}
+.top .cards .card .main img {
+  height: 400px;
+}
+.top .cards .card .sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: -10px;
+}
+.top .cards .card .sub img {
+  width: 240px;
+  height: 200px;
+}
+.top .cards .card2 {
+  margin-top: 30px;
+}
+.top  .last{
+  width: 100%;
+  display: flex;
+  margin: 60px;
+  justify-content: center;
+}
+.top  .last .learn-more{
+  background-color: rgb(20, 246, 171);
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-weight: 600;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  
+  border: 1px solid white;
+}
+/* top section ends here */
